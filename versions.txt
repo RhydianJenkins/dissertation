@@ -1,0 +1,94 @@
+Versions
+
+REPORT
+2.0
+Final Draft. 
+
+1.0
+First draft. Most of content is there but it needs serious revising. 
+Rewording, reformatting, spell checking etc
+
+0.4
+Some content has been added (or filled in, as plan was already there).
+
+0.3
+Plan has now been formatted and finished
+
+0.2
+A revised plan. This plan will contain most of the things that will go in the final report
+
+0.2
+Plan has been formatted and expanded.
+
+0.1
+An unrevised plan. This plan will be taken and revised with my tutor
+
+
+SIMULATOR
+1.3 (finished 12/04/16)
+Multi-target capability has been added, bots can now form various shapes depending on what seed is elected.
+The bots are now slightly attracted to the center of the canvas, which removes the need to look at the center when leaving it.
+Bug fixes and refactoring to finalise the project.
+
+1.2 (finished 05/04/16)
+Bots now gather all data of which bots they’re connected to through the LEDs.
+Instead of the target system for electing seed bots, the user will select and pick a bot to become a seed.
+The button panel has now been removed, as well as any button listeners.
+Added instructional text to top left of screen.
+
+1.1 (finished 28/03/16)
+When a bot connects to the bot, its LED will switch off and the other bots LED will come on (for now, mimic). 
+Also, the connecting system has been improved so that the bots will now connect in a straighter line.
+
+1.0 (finished 16/03/16)
+LEDs are now controlled by an LEDManager class. This means that the Bot can give high level commands to the LEDs 
+and not have to micromanage them.
+Bots will now connect themselves to other bots properly, and display LED lights confirming so.
+A bug has been fixed where the bot can be seen but the LED cannot as too far away.
+
+0.9 (finished 15/03/16)
+Bots now have multiple coloured LEDs, only 1 of which has a charge (attraction). The others are used to confirm the bots have connected to another bot.
+The user can now place an object in the canvas which will serve as a point/target where a seed robot will elect itself.
+This target has an interface and a single unimplemented target type (line).
+The positioning system bug has been corrected to make the center of ALL objects its x, y co-ord.
+
+0.8 (finished 03/03/16)
+VFF has now been implemented and works properly. The bots can now actively seek out LEDs and move towards them whilst avoiding other bots.
+The values for the system has been tweaked.
+
+0.7 (finished 01/03/16)
+Various code pieces has been refactored to make the system easier to understand and work more efficiently. 
+The color scheme has been changed to make the Simulator more aesthetically appealling.
+Work has begun on Virtual Force Fields (VFF) to allow the bot to get to a desired position while avoiding other bots.
+Although the system is technically implemented, serious 'tweaking' is needed to get it to work properly
+
+0.6 (finished 25/02/16)
+LEDs have been increased to 7 per Bot, and the functionality has been improved slightly to make them easier to 
+use (switch(red);). Bots can now also roam and avoid each-other randomly. This is done by simply going in the opposite 
+direction to the average vector of close bots. 
+
+0.5 (finished 18/02/16)
+Bots now have 3 LEDs attached to the class, and these LED’s have basic functions such as switch(). 
+The LEDs also render themselves in the correct part of the screen relative to the bot they're attached to.
+
+0.4 (finished 15/02/16)
+Bots now have a desired direction. At every tick, the bot now turns towards the desired direction OR 
+moves forward if it is already facing that desired direction. Bots can now also calculate the average 
+direction relative to itself to all of its close bots.
+
+0.3 (finished 12/02/16)
+Users can now interact with the BotCanvas in order to add, move, and remove bots using the mouse. 
+UI has been cleaned up to be more aesthetically pleasing and the engine has also been 'de-plagiarised'.
+
+0.2 (finished 08/02/16)
+This version brings basic bot functionality, and the introduction to the sensor class.
+Bots can now roam around the canvas randomly, avoiding the canvas edges, and detect near-by bots.
+Bug with the btnPanel overlapping the BotCanvas has been fixed.
+Tested with 500 bots at 60 ticks and preformed with 80 - 100 fps.
+
+0.1 (finished 07/02/16)
+A basic JFrame with a canvas (previously JPanel) area where bots can be drawn.
+No bot functionality has been implemented, only the ability to do basic functions for themselves (moveForward(), turnAround()...)
+The simulator uses a plagiarised engine that keeps it running at x ticks.
+Basic UI design, buttons, labels, etc.
+exit, randomise directions, center all robot buttons have been implemented
